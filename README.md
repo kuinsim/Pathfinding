@@ -2,7 +2,8 @@ In this project, I worked with S3, a simple RTS game designed to test AI techniq
 
 One thing to note is that I implemented a Node class for creating and using Nodes in my A* algorithm. The Node class stores the parent, x, y, g, and h values for a Node and has a method to calculate the heuristic using the Manhatten Distance. Since I am using a HashSet, I overrided the hashCode and equals methods in my Node class.
 
-To implement A* pathfinding in my program, I refernced the following algorithm:
+To implement A* pathfinding in my program, I refernced the following algorithm:  
+  
 Start.g = 0;
 Start.h = heuristic(Start)
 OPEN = [Start];
