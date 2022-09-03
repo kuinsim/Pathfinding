@@ -1,7 +1,3 @@
-Suin Kim
-CS387-801
-Project 2
-
 In this project, I worked with S3, a simple RTS game designed to test AI techniques. S3 looks very simple and has pretty basic graphics, but it features most of the characteristics of more complex RTS games such as Starcraft. The goal of this project is to learn how to implement pathfinding methods, which are the most common technique in computer games of all genres. Specifically, I implemented an A* approach to path finding.
 
 One thing to note is that I implemented a Node class for creating and using Nodes in my A* algorithm. The Node class stores the parent, x, y, g, and h values for a Node and has a method to calculate the heuristic using the Manhatten Distance. Since I am using a HashSet, I overrided the hashCode and equals methods in my Node class.
