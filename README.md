@@ -4,21 +4,21 @@ One thing to note is that I implemented a Node class for creating and using Node
 
 To implement A* pathfinding in my program, I refernced the following algorithm:  
   
-Start.g = 0;
-Start.h = heuristic(Start)
-OPEN = [Start];
-CLOSED = []
-WHILE OPEN is not empty
-N = OPEN.removeLowestF()
-IF goal(N) RETURN path to N
-CLOSED.add(N)
-FOR all children M of N not in CLOSED:
-M.parent = N
-M.g = N.g + 1;
-M.h = heuristic(M)
-OPEN.add(M)
-ENDFOR
-ENDWHILE
+Start.g = 0;  
+Start.h = heuristic(Start)  
+OPEN = [Start];  
+CLOSED = []  
+WHILE OPEN is not empty  
+N = OPEN.removeLowestF()  
+IF goal(N) RETURN path to N  
+CLOSED.add(N)  
+FOR all children M of N not in CLOSED:  
+M.parent = N  
+M.g = N.g + 1;  
+M.h = heuristic(M)  
+OPEN.add(M)  
+ENDFOR  
+ENDWHILE  
 
 In order for A* to work properly, I had to implement three helper methods removeLowestF, retrievePath, and isCellFree. The removeLowestF method removes the node with the lowest F, the value of g and h combined, from the open list. The retrievePath method retrieves the shortest path by returning a list of the goal node's parents. The isCellFree method checks if the S3PhysicalEntity is able to a desired cell.
 
